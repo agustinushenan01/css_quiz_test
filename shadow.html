@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow</title>
+    <style>
+        body{
+            padding: 200px;
+        }
+        .text-shadow{
+            text-shadow: 3px 2px 2px powderblue;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            color: rgb(41, 40, 40);
+        }
+
+        .box-shadow{
+            box-shadow: 2px 1px 5px orangered;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(36, 36, 36);
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+        .border-example{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            /* border-radius: 5px 50px 5px 50px; /* atas kiri, atas kanan, bawah kanan dan bawah kiri */
+            border-radius: 0px 20px; /* value 1: kiri atas dan kanan bawah, value 2: kanan atas dan kiri bawah */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-shadow">Text With Shadow</h1>
+    <div class="box-shadow"></div>
+    <div class="border-example"></div>
+</body>
+</html>

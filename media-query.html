@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Media Query</title>
+    <!-- Brakpoint -> Desktop -> Tablet -> Mobile -->
+    <!-- Destkop: 1024px
+    Tablet: 768px
+    Mobile: 320px -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            display: inline-block;
+        }
+
+        .box2{
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+            display: inline-block;
+        }
+
+        .box3{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            display: inline-block;
+        }
+
+        .box-group{
+            width: 100%;
+        }
+
+        /* menggunakan max-width dapat diartikan dengan lebih besar dari layar 320px */
+        /*
+        @media (min-width: 320px){
+            .box1{
+                background-color: blue;
+            }
+            .box2{
+                background-color: green;
+            }
+            .box3{
+                background-color: red;
+            }
+        }
+        */
+
+        /* menggunakan max-width dapat diartikan dengan lebih kecil dari layar 320px */
+        /*
+        @media (max-width: 320px){
+            .box1{
+                background-color: teal;
+            }
+            .box2{
+                background-color: orange;
+            }
+            .box3{
+                background-color: pink;
+            }
+        }
+        */
+
+        @media print{
+            .header{
+                display: none;
+            }
+
+            .box1{
+                font-weight: bold;
+                font-size: 24px;
+                color: red;
+            }
+            .box2{
+                font-weight: bold;
+                font-size: 24px;
+                color: blue;
+            }
+            .box3{
+                font-weight: bold;
+                font-size: 24px;
+                color: green;
+            }
+        }
+
+    </style>
+    <!-- @ -> Anotasi -->
+</head>
+<body>
+    <div class="box-group">
+        <div class="header">
+            <h1>Title: Data Pengguna</h1>
+        </div>
+        <div class="box1">Halo</div>
+        <div class="box2">Halo</div>
+        <div class="box3">Halo</div>
+    </div>
+</body>
+</html>
